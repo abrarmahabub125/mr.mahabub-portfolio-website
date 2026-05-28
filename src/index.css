@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import "tailwindcss";
+
+/* =========================
+   Fonts
+========================= */
+* {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+}
+/* =========================
+   Root Variables
+========================= */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  /* colors */
+  --color-background: #000000;
+  --color-brand: #19c3dd;
+  --color-brand-secondary: #00edff73;
+  --color-primary: #ffffff;
+  --color-primary-black: #000000;
+  --color-secondary: #d6d6d6;
+  --color-border: #2a2b2b;
+
+  /* font */
+  --font-primary: "RocGrotesk", sans-serif;
+
+  /* radius */
+  --radius-primary: 12px;
+
+  /* transition */
+  --transition-primary: all 0.3s ease;
+}
+
+/* =========================
+   Tailwind Theme Mapping
+========================= */
+
+@theme inline {
+  --color-background: var(--color-background);
+  --color-brand: var(--color-brand);
+  --color-brand-secondary: var(--color-brand-secondary);
+  --color-primary: var(--color-primary);
+  --color-primary-black: var(--color-primary-black);
+  --color-secondary: var(--color-secondary);
+  --color-gray-400: var(--color-border);
+
+  --font-primary: var(--font-primary);
+
+  --radius-primary: var(--radius-primary);
+  --animate-marquee: marquee 20s linear infinite;
+}
+
+/* =========================
+   Base Styles
+========================= */
+
+html {
+  background-color: var(--color-background);
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 223, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 223, 255, 0.6);
+}
+
+/* =========================
+   Custom Utility Classes
+========================= */
+
+@layer utilities {
+  /* background */
+  .bg-brand {
+    background-color: var(--color-brand);
+  }
+
+  .bg-background {
+    background-color: var(--color-background);
+  }
+
+  /* text */
+  .text-primary {
+    color: var(--color-primary);
+  }
+
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+
+  /* border */
+  .border-primary {
+    border-color: var(--color-border);
+  }
+
+  /* radius */
+  .rounded-primary {
+    border-radius: var(--radius-primary);
+  }
+
+  /* transition */
+  .transition-primary {
+    transition: var(--transition-primary);
+  }
+
+  /* flex center */
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .shadow-primary {
+    box-shadow: 0px 0px 25px -5px #00deff;
+  }
+  .animate-marquee {
+    animation: var(--animate-marquee);
+    will-change: transform;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
