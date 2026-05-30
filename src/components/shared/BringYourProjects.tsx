@@ -34,7 +34,7 @@ const BringYourProjects = () => {
             together!
           </p>
           <div className="mt-8">
-            <Button label="Start a project" path="/projects" />
+            <Button label="Start a project" path="/contact-me" />
           </div>
         </div>
       </div>

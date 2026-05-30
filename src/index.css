@@ -11,11 +11,6 @@
 /* =========================
    Root Variables
 ========================= */
-html,
-body {
-  width: 100%;
-  overflow-x: hidden;
-}
 
 :root {
   /* colors */
@@ -68,6 +63,7 @@ body {
   font-family: var(--font-primary);
   color: var(--color-primary);
   min-height: 100vh;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {

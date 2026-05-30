@@ -95,7 +95,7 @@ const Navbar = () => {
           <div className="flex w-48 justify-end">
             <Link
               className="bg-brand-secondary hover:bg-brand hover:text-primary-black inline-flex h-11 items-center justify-center rounded-full px-6.5 text-sm backdrop-blur-xl transition-all duration-300 hover:scale-105"
-              to="/"
+              to="/contact-me"
             >
               Start a project
             </Link>

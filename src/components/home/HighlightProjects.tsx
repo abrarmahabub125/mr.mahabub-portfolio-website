@@ -1,3 +1,4 @@
+import { projects } from "../../data/data";
 import Button from "../shared/Button";
 import ProjectCard from "../shared/ProjectCard";
 
@@ -20,10 +21,10 @@ const HighlightProjects = () => {
         {/* Projects grid  */}
         <div className="mt-12">
           <div className="grid w-full gap-8 md:grid-cols-2 md:grid-rows-2">
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            <ProjectCard project={projects[0]} />
+            <ProjectCard project={projects[1]} />
+            <ProjectCard project={projects[2]} />
+            <ProjectCard project={projects[3]} />
           </div>
         </div>
       </div>

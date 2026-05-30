@@ -1,3 +1,4 @@
+import { services } from "../../data/data";
 import Button from "../shared/Button";
 import ServiceCard from "../shared/ServiceCard";
 
@@ -14,15 +15,15 @@ const MyServices = () => {
           >
             My services
           </h1>
-          <Button label={"Learn more"} path="/projects" />
+          <Button label={"Learn more"} path="/services" />
         </div>
 
         {/* Projects grid  */}
         <div className="mt-14">
           <div className="grid w-full grid-cols-1 grid-rows-3 gap-8 lg:grid-cols-3 lg:grid-rows-1">
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
+            {services.map((item, idx) => (
+              <ServiceCard key={idx} service={item} />
+            ))}
           </div>
         </div>
       </div>

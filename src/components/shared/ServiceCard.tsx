@@ -1,6 +1,5 @@
 import { Link } from "react-router";
-import Icon from "../../assets/icons/frontend-icon.png";
-const ServiceCard = () => {
+const ServiceCard = ({ service }) => {
   return (
     <Link
       to={"/services"}
@@ -13,17 +12,15 @@ const ServiceCard = () => {
           <div className="mb-2 lg:mb-4">
             <img
               className="size-12 object-cover object-center lg:size-14"
-              src={Icon}
+              src={service?.icon}
               alt="icon"
             />
           </div>
           <h1 className="from-brand to-primary bg-linear-140 bg-clip-text text-xl font-medium text-transparent lg:text-2xl">
-            Site WordPress
+            {service?.title}
           </h1>
           <p className="text-secondary line-clamp-5 text-sm/5.5 lg:text-sm/6">
-            Donnez vie à votre marque avec un site WordPress sur mesure. Je vous
-            accompagne dans la création d’un site performant, responsive et
-            optimisé pour le référencement à moindre coût.
+            {service?.description}
           </p>
         </div>
       </div>

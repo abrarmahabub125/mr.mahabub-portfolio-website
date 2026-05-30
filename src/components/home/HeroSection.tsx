@@ -44,7 +44,7 @@ const HeroSection = () => {
               <Button
                 data-aos="fade-up"
                 label={"Start a projects"}
-                path={"/projects"}
+                path={"/contact-me"}
               />
             </div>
           </div>

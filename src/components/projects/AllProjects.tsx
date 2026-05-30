@@ -1,5 +1,8 @@
+import { projects } from "../../data/data";
 import Button from "../shared/Button";
 import ProjectCard from "../shared/ProjectCard";
+
+console.log(projects);
 
 const AllProjects = () => {
   return (
@@ -14,20 +17,15 @@ const AllProjects = () => {
           >
             All projects
           </h1>
-          <Button label={"All projects"} path="/projects" />
+          <Button label={"My services"} path="/services" />
         </div>
 
         {/* Projects grid  */}
         <div className="mt-12">
           <div className="grid w-full gap-8 md:grid-cols-2 md:grid-rows-2">
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            {projects.map((projects, idx) => (
+              <ProjectCard key={idx} project={projects} />
+            ))}
           </div>
         </div>
       </div>

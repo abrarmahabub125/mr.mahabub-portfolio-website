@@ -10,25 +10,26 @@ const ContactDetails = () => {
           A need?
         </h1>
         <p className="text-primary mt-4 text-sm leading-6 font-light">
-          Si vous avez un projet ou des besoins en Web Design, Direction
-          Artistique ou encore en Motion Design, n’hésitez pas à me contacter !
+          If you have a project idea or need a modern, scalable, and
+          high-performing web application, feel free to get in touch with me.
         </p>
         <p className="text-primary mt-4 text-sm leading-6 font-light">
-          Nous échangerons par mail en premier lieu et par la suite sur WhatsApp
-          afin de faciliter l’échange. Je vous suis disponible à tout moment.
+          We can initially communicate through email and later continue on
+          WhatsApp for smoother discussion and project updates. I’m available to
+          discuss your ideas, requirements, and development solutions at any
+          time.
         </p>
       </div>
       <div className="mt-8">
         <p className="text-secondary mt-4 text-sm leading-6 font-extralight">
-          Traitement des données personelles
+          Processing of personal data
         </p>
         <p className="text-secondary mt-4 text-sm leading-6 font-extralight">
-          Conformément aux dispositions des articles 38 et suivants de la loi
-          78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux
-          libertés, tout utilisateur dispose d’un droit d’accès, de
-          rectification, de suppression et d’opposition aux données personnelles
-          le concernant. Vous pouvez exercer ce droit par simple demande en nous
-          contactant en justifiant de votre identité.
+          In accordance with applicable data protection regulations, any
+          personal information shared through this website or communication
+          channels will remain secure and confidential. You may request access,
+          modification, or deletion of your personal data at any time by
+          contacting me directly.
         </p>
       </div>
     </div>

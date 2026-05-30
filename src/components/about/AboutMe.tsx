@@ -48,19 +48,17 @@ const AboutMe = () => {
           className="text-primary mt-12 text-base leading-7 font-light"
         >
           <p className="text-primary text-xs leading-5 font-light md:text-sm lg:text-base lg:leading-7">
-            I have from the age of 9 years, wanted to delve into this field, it
-            all started when I wanted to become a Minecraft YouTuber. I needed a
-            banner and a logo, so I started from there to self-train. I am also
-            passionate about the world of photography and video games.
+            I’m a passionate MERN stack developer with 2 years of experience
+            building modern, responsive, and scalable web applications. I
+            specialize in creating dynamic user interfaces with React, Next.js,
+            Tailwind CSS, and TypeScript, alongside developing secure and
+            efficient backend systems using Node.js, Express, and MongoDB.
           </p>
           <p className="text-primary mt-4 text-xs leading-5 font-light md:text-sm lg:text-base lg:leading-7">
-            Early 2025, I wanted to get started officially Freelance so that I
-            can get closer to my goal : being able to be professionally free.
-            Since then, I have had a few small clients with services such as
-            logos and banners a logical continuation which I therefore granted
-            myself. The name "Aeruk" has always been my nickname in games,
-            "Aeruk" which shimmers becomes "Kurea", a reference to my origins,
-            south Korea.
+            I focus on writing clean, maintainable code and delivering smooth
+            user experiences with optimized performance. From frontend design to
+            backend architecture and database management, I enjoy turning ideas
+            into functional digital products that solve real-world problems.
           </p>
         </div>
         <div className="mt-12">

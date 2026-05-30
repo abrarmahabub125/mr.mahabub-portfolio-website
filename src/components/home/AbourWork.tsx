@@ -10,22 +10,22 @@ const AbourWork = () => {
           data-aos-offset="0"
           className="mb-12 text-center text-lg font-semibold lg:text-left lg:text-2xl"
         >
-          Forged skills in{" "}
+          Crafting modern and scalable{" "}
           <span className="from-brand to-primary bg-linear-120 bg-clip-text font-bold text-transparent">
-            web integration
+            web applications
           </span>{" "}
-          and in digital design, I will be{" "}
+          with the{" "}
           <span className="from-brand to-primary bg-linear-120 bg-clip-text font-bold text-transparent">
-            delighted
+            MERN stack,
           </span>{" "}
-          to collaborate with you. My goal: to offer{" "}
+          I’m passionate about turning ideas into powerful digital experiences.
+          My goal is to{" "}
           <span className="from-brand to-primary bg-linear-120 bg-clip-text font-bold text-transparent">
-            you one unique creation
+            build fast, responsive, and user-focused solutions
           </span>{" "}
-          , tailor-made, which reflects your identity and fully meets your
-          needs.
+          that perfectly align with your vision and business needs.
         </h1>
-        <Button label="Start a project" path="/projects" />
+        <Button label="Start a project" path="/contact-me" />
       </div>
     </div>
   );
