@@ -12,7 +12,7 @@ type NodeType = {
   vy: number;
 };
 
-const useCanvasCursor = () => {
+const useCanvasCursor = (): void => {
   useEffect(() => {
     const canvas = document.getElementById(
       "canvas",
@@ -113,9 +113,9 @@ const useCanvasCursor = () => {
       }
 
       draw() {
-        ctx.beginPath();
+        ctx!.beginPath();
 
-        ctx.moveTo(this.nodes[0].x, this.nodes[0].y);
+        ctx!.moveTo(this.nodes[0].x, this.nodes[0].y);
 
         for (let i = 1; i < this.nodes.length - 2; i++) {
           const current = this.nodes[i];
@@ -125,17 +125,17 @@ const useCanvasCursor = () => {
 
           const y = (current.y + next.y) * 0.5;
 
-          ctx.quadraticCurveTo(current.x, current.y, x, y);
+          ctx!.quadraticCurveTo(current.x, current.y, x, y);
         }
 
         const penultimate = this.nodes[this.nodes.length - 2];
 
         const last = this.nodes[this.nodes.length - 1];
 
-        ctx.quadraticCurveTo(penultimate.x, penultimate.y, last.x, last.y);
+        ctx!.quadraticCurveTo(penultimate.x, penultimate.y, last.x, last.y);
 
-        ctx.stroke();
-        ctx.closePath();
+        ctx!.stroke();
+        ctx!.closePath();
       }
     }
 
@@ -154,15 +154,15 @@ const useCanvasCursor = () => {
     };
 
     const render = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx!.clearRect(0, 0, canvas.width, canvas.height);
 
-      ctx.globalCompositeOperation = "lighter";
+      ctx!.globalCompositeOperation = "lighter";
 
       hue = oscillator.update();
 
-      ctx.strokeStyle = `hsla(${Math.round(hue)}, 90%, 60%, 0.2)`;
+      ctx!.strokeStyle = `hsla(${Math.round(hue)}, 90%, 60%, 0.2)`;
 
-      ctx.lineWidth = 1;
+      ctx!.lineWidth = 1;
 
       lines.forEach((line) => {
         line.update();

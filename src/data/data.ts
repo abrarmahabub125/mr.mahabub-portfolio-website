@@ -15,6 +15,7 @@ export interface Project {
   description: string;
   techStacks: string[];
   liveSite: string;
+  category: string;
 }
 
 export const projectsHeroData = {
@@ -123,6 +124,7 @@ export const projects: Project[] = [
       "JWT",
     ],
     liveSite: "https://x-social-clone.vercel.app/",
+    category: "Social media",
   },
   {
     image: BookLibrary,
@@ -138,6 +140,7 @@ export const projects: Project[] = [
       "Socket.io",
     ],
     liveSite: "https://book-library-frontend-gilt.vercel.app/",
+    category: "Portfolio",
   },
   {
     image: MotionPixel,
@@ -152,6 +155,7 @@ export const projects: Project[] = [
       "AOS",
     ],
     liveSite: "https://motion-pixel.vercel.app/",
+    category: "Animated design",
   },
   {
     image: Estatein,
@@ -167,6 +171,7 @@ export const projects: Project[] = [
       "Cloudinary",
     ],
     liveSite: "https://estatein-website-lyart.vercel.app/",
+    category: "E-commerce",
   },
   {
     image: TicTacToe,
@@ -174,6 +179,7 @@ export const projects: Project[] = [
       "An interactive web-based Tic-Tac-Toe game featuring an intelligent AI opponent (Minimax algorithm), local multiplayer modes, and state-saving features to track player scores across sessions.",
     techStacks: ["React", "TypeScript", "Tailwind CSS"],
     liveSite: "https://abrarmahabub125.github.io/tic-tac-toe-game/",
+    category: "UI/UX design",
   },
   {
     image: TaskManager,
@@ -188,6 +194,7 @@ export const projects: Project[] = [
       "Tailwind CSS",
     ],
     liveSite: "https://todo-task-manager-application-using.vercel.app/",
+    category: "Portfolio",
   },
   {
     image: RocPaperSecissor,
@@ -195,6 +202,7 @@ export const projects: Project[] = [
       "A modern, stylized implementation of the classic Rock-Paper-Scissors game featuring rich animations, dynamic win/loss streak counters, and precise scoring mechanics against a computer dealer.",
     techStacks: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     liveSite: "https://abrarmahabub125.github.io/rock-paper-scissors-game/",
+    category: "Animated design",
   },
   {
     image: appVerse,
@@ -202,5 +210,6 @@ export const projects: Project[] = [
       "A centralized application showcase platform and micro-frontend landing page highlighting a suite of web applications, tools, and developer utilities with streamlined navigation.",
     techStacks: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     liveSite: "https://app-verse.vercel.app/",
+    category: "Portfolio",
   },
 ];

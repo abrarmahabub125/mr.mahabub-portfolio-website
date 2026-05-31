@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import { Outlet } from "react-router";
 import AOSProvider from "./AosPrivider";
 import MobileNavbar from "./components/MobileNavbar";
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <AOSProvider />
+      <Toaster position="bottom-right" reverseOrder={true} />
 
       <div className="hidden lg:block">
         <Navbar />

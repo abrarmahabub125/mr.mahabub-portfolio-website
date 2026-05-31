@@ -1,6 +1,14 @@
 import { Link } from "react-router";
 
-const PageHeroSection = ({ data }) => {
+interface PageHeroSectionProps {
+  data: {
+    pathLabel: string;
+    heading: string;
+    filters: string[];
+  };
+}
+
+const PageHeroSection = ({ data }: PageHeroSectionProps) => {
   return (
     <div
       data-aos="fade-zoom-in"
@@ -21,7 +29,7 @@ const PageHeroSection = ({ data }) => {
       </div>
       <div className="mt-8 px-4 lg:px-0">
         <div className="flex max-w-2xl flex-wrap justify-evenly gap-4">
-          {data.filters.map((item, idx) => (
+          {data.filters.map((item: string, idx: number) => (
             <button
               key={idx}
               className="text-primary hover:bg-primary hover:text-primary-black rounded-full border border-gray-400 px-4 py-2.5 text-xs whitespace-nowrap backdrop-blur-3xl transition-all duration-300 lg:px-5 lg:py-3 lg:text-sm"

@@ -1,5 +1,5 @@
 import Lenis from "lenis";
-import { ReactNode, useEffect } from "react";
+import { type ReactNode, useEffect } from "react";
 
 interface Props {
   children: ReactNode;

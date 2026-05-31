@@ -1,6 +1,11 @@
 import { Link } from "react-router";
+import type { Project } from "../../data/data";
 
-const ProjectCard = ({ project }) => {
+interface ProjectCardProps {
+  project: Project;
+}
+
+const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div
       data-aos="fade-zoom-in"

@@ -1,5 +1,14 @@
 import { Link } from "react-router";
-const ServiceCard = ({ service }) => {
+
+interface ServiceCardProps {
+  service: {
+    icon: string;
+    title: string;
+    description: string;
+  };
+}
+
+const ServiceCard = ({ service }: ServiceCardProps) => {
   return (
     <Link
       to={"/services"}

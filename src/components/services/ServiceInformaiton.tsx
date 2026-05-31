@@ -1,7 +1,19 @@
 import { Link } from "react-router";
 import Button from "../shared/Button";
 
-const ServiceInformaiton = ({ serviceDetails }) => {
+interface ServiceInformationProps {
+  serviceDetails: {
+    title: string;
+    description: string;
+    skills: string[];
+  };
+  liveSite: string;
+}
+
+const ServiceInformaiton = ({
+  serviceDetails,
+  liveSite,
+}: ServiceInformationProps) => {
   return (
     <div
       data-aos="fade-zoom-in"
@@ -45,7 +57,8 @@ const ServiceInformaiton = ({ serviceDetails }) => {
           </ul>
           <div className="mt-6 flex items-center gap-x-8">
             <Link
-              to="/"
+              to={liveSite}
+              target="_blank"
               className="hover:bg-primary hover:text-primary-black inline-block rounded-full border border-gray-400 px-5 py-2.5 text-xs transition-all duration-300 md:text-sm lg:px-5 lg:py-3"
             >
               See the projects

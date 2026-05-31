@@ -1,32 +1,117 @@
+import { type SubmitHandler, useForm } from "react-hook-form";
+import toast from "react-hot-toast";
+
+type ContactFormInputs = {
+  name: string;
+  email: string;
+  discussion: string;
+  message: string;
+};
+
 const ContactForm = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<ContactFormInputs>({
+    mode: "onBlur",
+  });
+
+  const onSubmit: SubmitHandler<ContactFormInputs> = () =>
+    toast.success("Message sent successfully.");
+
   return (
     <div
       data-aos="fade-zoom-in"
       data-aos-easing="ease-in-back"
       data-aos-offset="0"
     >
-      <form>
-        <div className="flex w-full flex-col space-y-6">
-          <input
-            className="text-primary rounded-md border border-gray-400 px-4 py-2.5 text-sm font-light outline-none"
-            type="text"
-            placeholder="John Doe"
-          />
-          <input
-            className="text-primary rounded-md border border-gray-400 px-4 py-2.5 text-sm font-light outline-none"
-            type="email"
-            placeholder="you@example.com"
-          />
-          <input
-            className="text-primary rounded-md border border-gray-400 px-4 py-2.5 text-sm font-light outline-none"
-            type="text"
-            placeholder="Project discussion"
-          />
-          <textarea
-            className="text-primary rounded-md border border-gray-400 px-4 py-2.5 text-sm font-light outline-none"
-            rows={6}
-            placeholder="Write your message..."
-          />
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="flex w-full flex-col gap-5">
+          {/* Name */}
+          <div>
+            <input
+              {...register("name", {
+                required: "Name is required",
+                maxLength: {
+                  value: 24,
+                  message: "Name cannot exceed 24 characters",
+                },
+              })}
+              className="text-primary w-full rounded-md border border-gray-400 px-4 py-2.5 text-sm font-light transition-colors outline-none"
+              type="text"
+              placeholder="John Doe"
+            />
+
+            {errors.name && (
+              <p className="mt-1 text-xs text-red-500">{errors.name.message}</p>
+            )}
+          </div>
+
+          {/* Email */}
+          <div>
+            <input
+              {...register("email", {
+                required: "Email is required",
+                pattern: {
+                  value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                  message: "Please enter a valid email address",
+                },
+              })}
+              className="text-primary w-full rounded-md border border-gray-400 px-4 py-2.5 text-sm font-light transition-colors outline-none"
+              type="email"
+              placeholder="you@example.com"
+            />
+
+            {errors.email && (
+              <p className="mt-1 text-xs text-red-500">
+                {errors.email.message}
+              </p>
+            )}
+          </div>
+
+          {/* Discussion */}
+          <div>
+            <input
+              {...register("discussion", {
+                maxLength: {
+                  value: 200,
+                  message: "Discussion cannot exceed 200 characters",
+                },
+              })}
+              className="text-primary w-full rounded-md border border-gray-400 px-4 py-2.5 text-sm font-light transition-colors outline-none"
+              type="text"
+              placeholder="Project discussion"
+            />
+
+            {errors.discussion && (
+              <p className="mt-1 text-xs text-red-500">
+                {errors.discussion.message}
+              </p>
+            )}
+          </div>
+
+          {/* Message */}
+          <div>
+            <textarea
+              {...register("message", {
+                required: "Message is required",
+                maxLength: {
+                  value: 300,
+                  message: "Message cannot exceed 300 characters",
+                },
+              })}
+              className="text-primary w-full rounded-md border border-gray-400 px-4 py-2.5 text-sm font-light transition-colors outline-none"
+              rows={6}
+              placeholder="Write your message..."
+            />
+
+            {errors.message && (
+              <p className="mt-1 text-xs text-red-500">
+                {errors.message.message}
+              </p>
+            )}
+          </div>
         </div>
 
         <button
