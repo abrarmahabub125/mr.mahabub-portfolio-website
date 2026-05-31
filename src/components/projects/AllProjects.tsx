@@ -1,13 +1,18 @@
 import { projects } from "../../data/data";
+import { useFilter } from "../../hooks/useFilterContext";
 import Button from "../shared/Button";
 import ProjectCard from "../shared/ProjectCard";
 
-console.log(projects);
-
 const AllProjects = () => {
+  const { filterKey } = useFilter();
+  const filteredProject =
+    filterKey === "All"
+      ? projects
+      : projects.filter((project) => project.category === filterKey);
+
   return (
-    <div className="px-[calc((100vw-1150px)/2)]">
-      <div className="mt-8 px-4 lg:px-0">
+    <div className="px-4 xl:px-[calc((100vw-1150px)/2)]">
+      <div className="mt-8">
         <div className="flex flex-col items-center justify-between gap-y-8 md:flex-row">
           <h1
             data-aos="fade-zoom-in"
@@ -23,7 +28,7 @@ const AllProjects = () => {
         {/* Projects grid  */}
         <div className="mt-12">
           <div className="grid w-full gap-8 md:grid-cols-2 md:grid-rows-2">
-            {projects.map((projects, idx) => (
+            {filteredProject.map((projects, idx) => (
               <ProjectCard key={idx} project={projects} />
             ))}
           </div>

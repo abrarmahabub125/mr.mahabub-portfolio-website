@@ -4,8 +4,8 @@ import ServiceCard from "../shared/ServiceCard";
 
 const MyServices = () => {
   return (
-    <div className="px-[calc((100vw-1150px)/2)]">
-      <div className="mt-8 px-4 lg:px-0">
+    <div className="xl:px-[calc((100vw-1150px)/2)]">
+      <div className="mt-8 px-4 xl:px-0">
         <div className="flex flex-col items-center justify-between gap-y-8 md:flex-row lg:flex-row lg:gap-y-0">
           <h1
             data-aos="fade-zoom-in"

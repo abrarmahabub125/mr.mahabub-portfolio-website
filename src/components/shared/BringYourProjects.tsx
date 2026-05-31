@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const BringYourProjects = () => {
   return (
-    <div className="my-28 px-[calc((100vw-1150px)/2)]">
+    <div className="my-28 xl:px-[calc((100vw-1150px)/2)]">
       <div className="flex w-full flex-col items-center justify-center gap-y-4 px-4 lg:px-0">
         <div
           data-aos="fade-zoom-in"
@@ -28,7 +28,7 @@ const BringYourProjects = () => {
             data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
             data-aos-offset="0"
-            className="text-primary mt-4 text-center text-sm font-light lg:text-base lg:font-normal"
+            className="text-primary mt-4 text-center text-sm font-light lg:text-base"
           >
             Tell me about your ideas and desires, let’s discuss them and work
             together!

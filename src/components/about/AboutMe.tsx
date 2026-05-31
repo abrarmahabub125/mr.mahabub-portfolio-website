@@ -4,8 +4,8 @@ import Button from "../shared/Button";
 
 const AboutMe = () => {
   return (
-    <div className="my-12 lg:px-[calc((100vw-1150px)/2)]">
-      <div className="flex flex-col items-center px-4 lg:px-0">
+    <div className="my-12 px-4 xl:px-[calc((100vw-1150px)/2)]">
+      <div className="flex flex-col items-center">
         <div
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
@@ -47,7 +47,7 @@ const AboutMe = () => {
           data-aos-offset="0"
           className="text-primary mt-12 text-base leading-7 font-light"
         >
-          <p className="text-primary text-xs leading-5 font-light md:text-sm lg:text-base lg:leading-7">
+          <p className="text-primary text-sm leading-5 font-light lg:text-base lg:leading-6 lg:font-normal xl:leading-7">
             I’m a passionate MERN stack developer with 2 years of experience
             building modern, responsive, and scalable web applications. I
             specialize in creating dynamic user interfaces with React, Next.js,

@@ -4,7 +4,7 @@ import ServiceInformaiton from "./ServiceInformaiton";
 
 const ServiceDetails = () => {
   return (
-    <div className="px-[calc((100vw-1150px)/2)]">
+    <div className="xl:px-[calc((100vw-1150px)/2)]">
       {/* wrapper  */}
       <div>
         {/* container  */}

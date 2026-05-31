@@ -25,10 +25,10 @@ const ServiceCard = ({ service }: ServiceCardProps) => {
               alt="icon"
             />
           </div>
-          <h1 className="from-brand to-primary bg-linear-140 bg-clip-text text-xl font-medium text-transparent lg:text-2xl">
+          <h1 className="from-brand to-primary bg-linear-140 bg-clip-text text-xl font-medium text-transparent lg:text-2xl lg:font-semibold">
             {service?.title}
           </h1>
-          <p className="text-secondary line-clamp-5 text-sm/5.5 lg:text-sm/6">
+          <p className="text-secondary line-clamp-5 text-sm/5.5 font-light lg:text-sm/6">
             {service?.description}
           </p>
         </div>

@@ -35,8 +35,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             </span>
           ))}
         </div>
-        <div>
-          <p className="text-secondary line-clamp-4 text-xs leading-5 lg:text-sm lg:leading-6">
+        <div className="mt-2">
+          <p className="text-secondary line-clamp-4 text-xs leading-5 font-light lg:text-sm lg:leading-6 lg:font-normal">
             {project?.description}
           </p>
         </div>

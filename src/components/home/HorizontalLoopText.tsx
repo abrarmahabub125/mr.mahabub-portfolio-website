@@ -14,7 +14,7 @@ const HorizontalLoopText = () => {
       data-aos="fade-zoom-in"
       data-aos-easing="ease-in-back"
       data-aos-offset="0"
-      className="mt-28 px-[calc((100vw-1150px)/2)]"
+      className="mt-28 px-4 xl:px-[calc((100vw-1150px)/2)]"
     >
       {/* fade wrapper */}
       <div className="relative my-20 overflow-hidden">

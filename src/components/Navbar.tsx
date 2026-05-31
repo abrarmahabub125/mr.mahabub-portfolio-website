@@ -21,7 +21,7 @@ const Navbar = () => {
       >
         {/* Container  */}
         <div className="flex items-center justify-between">
-          <div className="w-48">
+          <div className="lg:w-40 xl:w-48">
             <Link to="/">
               <img
                 className="pointer-events-auto size-14 object-cover"
@@ -92,7 +92,7 @@ const Navbar = () => {
               </ul>
             </nav>
           </div>
-          <div className="flex w-48 justify-end">
+          <div className="flex justify-end lg:w-40 xl:w-48">
             <Link
               className="bg-brand-secondary hover:bg-brand hover:text-primary-black inline-flex h-11 items-center justify-center rounded-full px-6.5 text-sm backdrop-blur-xl transition-all duration-300 hover:scale-105"
               to="/contact-me"

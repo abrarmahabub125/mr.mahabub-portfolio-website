@@ -22,7 +22,7 @@ const ServiceInformaiton = ({
     >
       <div className="flex flex-col gap-y-8">
         <div>
-          <h1 className="from-brand to-primary bg-linear-120 bg-clip-text text-xl font-medium text-transparent lg:text-2xl">
+          <h1 className="from-brand to-primary bg-linear-120 bg-clip-text text-xl font-medium text-transparent lg:text-2xl lg:font-semibold">
             {serviceDetails?.title}
           </h1>
           <p className="text-primary mt-4 text-xs font-light lg:text-sm">
@@ -57,9 +57,12 @@ const ServiceInformaiton = ({
           </ul>
           <div className="mt-6 flex items-center gap-x-8">
             <Link
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
               to={liveSite}
               target="_blank"
-              className="hover:bg-primary hover:text-primary-black inline-block rounded-full border border-gray-400 px-5 py-2.5 text-xs transition-all duration-300 md:text-sm lg:px-5 lg:py-3"
+              className="hover:bg-primary hover:text-primary-black inline-block transform rounded-full border border-gray-400 px-5 py-2.5 text-xs transition-all duration-300 hover:scale-105 md:text-sm lg:px-5 lg:py-3"
             >
               See the projects
             </Link>
