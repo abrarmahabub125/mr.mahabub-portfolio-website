@@ -3,11 +3,15 @@ import FrontendIcon from "../assets/icons/frontend-icon.png";
 import BackendIcon from "../assets/icons/server.png";
 import appVerse from "../assets/images/app-verse.png";
 import BookLibrary from "../assets/images/book-library.png";
+import DrafterDesign from "../assets/images/drafter-design.png";
 import Estatein from "../assets/images/estatein.png";
+import FilpCardGame from "../assets/images/filp-card-game.png";
+import HangManGame from "../assets/images/hang-man-game.png";
 import MotionPixel from "../assets/images/motion-pixel.png";
 import RocPaperSecissor from "../assets/images/rock-paper-scissor.png";
 import TaskManager from "../assets/images/task-manager.png";
 import TicTacToe from "../assets/images/tic-tac-teo.png";
+import TicketManagement from "../assets/images/ticket-management-app.png";
 import xSocial from "../assets/images/x-social.png";
 
 export interface Project {
@@ -41,11 +45,12 @@ export const projectsHeroData: HeroData = {
   heading: "My projects",
   filters: [
     "All",
-    "Social media",
-    "E-commerce",
+    "Social Media",
+    "Management System",
     "Portfolio",
-    "UI/UX design",
-    "Animated design",
+    "Real Estate",
+    "Productivity",
+    "Game",
   ],
 };
 export const contactsHeroData: HeroData = {
@@ -130,10 +135,9 @@ export const projects: Project[] = [
   {
     image: xSocial,
     description:
-      "A full-featured MERN stack e-commerce platform featuring dynamic product management, secure JWT authentication, a persistent shopping cart, and an integrated admin dashboard for real-time inventory and order tracking.",
+      "A full-featured social media platform built with the MERN stack, featuring secure JWT authentication, post creation and interactions, user profiles, and real-time social engagement capabilities.",
     techStacks: [
       "React",
-      "Next.js",
       "TypeScript",
       "Tailwind CSS",
       "Node.js",
@@ -142,12 +146,12 @@ export const projects: Project[] = [
       "JWT",
     ],
     liveSite: "https://x-social-clone.vercel.app/",
-    category: "Social media",
+    category: "Social Media",
   },
   {
     image: BookLibrary,
     description:
-      "A productivity-focused workspace and team collaboration tool. It enables real-time task tracking, role-based access control, and seamless project management updates powered by WebSockets.",
+      "A digital library management system that allows users to browse, manage, and organize books efficiently. Designed with a clean interface and optimized workflows for seamless book tracking and management.",
     techStacks: [
       "React",
       "Vite",
@@ -155,79 +159,89 @@ export const projects: Project[] = [
       "Node.js",
       "Express.js",
       "MongoDB",
-      "Socket.io",
     ],
     liveSite: "https://book-library-frontend-gilt.vercel.app/",
-    category: "Portfolio",
+    category: "Management System",
   },
   {
     image: MotionPixel,
     description:
-      "An interactive and highly animated portfolio website built to showcase creative engineering. It features fluid UI transitions, ultra-smooth scrolling, and fully responsive fluid layouts optimized for performance.",
-    techStacks: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
-      "GSAP",
-      "AOS",
-    ],
+      "An interactive and highly animated portfolio website showcasing creative web experiences with smooth transitions, engaging micro-interactions, and responsive design principles.",
+    techStacks: ["React", "Tailwind CSS"],
     liveSite: "https://motion-pixel.vercel.app/",
-    category: "Animated design",
+    category: "Portfolio",
   },
   {
     image: Estatein,
     description:
-      "A scalable online learning management system featuring instructor tools, structured video lessons, automated student enrollment, progress dashboards, and automated payment processing.",
-    techStacks: [
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Stripe",
-      "Cloudinary",
-    ],
+      "A modern real estate platform designed to showcase property listings, featured properties, and real estate services through an elegant and user-friendly interface.",
+    techStacks: ["React", "Tailwind CSS"],
     liveSite: "https://estatein-website-lyart.vercel.app/",
-    category: "E-commerce",
+    category: "Real Estate",
   },
   {
     image: TicTacToe,
     description:
-      "An interactive web-based Tic-Tac-Toe game featuring an intelligent AI opponent (Minimax algorithm), local multiplayer modes, and state-saving features to track player scores across sessions.",
-    techStacks: ["React", "TypeScript", "Tailwind CSS"],
+      "A classic Tic-Tac-Toe game featuring an intelligent AI opponent, local multiplayer support, responsive design, and persistent score tracking for an engaging gameplay experience.",
+    techStacks: ["HTML", "CSS", "JavaScript"],
     liveSite: "https://abrarmahabub125.github.io/tic-tac-toe-game/",
-    category: "UI/UX design",
+    category: "Game",
   },
   {
     image: TaskManager,
     description:
-      "A personal productivity dashboard designed for time tracking and daily planning. Includes Kanban boards, priority labeling, automated deadline notifications, and custom analytics.",
-    techStacks: [
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Tailwind CSS",
-    ],
+      "A productivity-focused task management application that helps users organize work efficiently with task tracking, status management, and intuitive workflow organization.",
+    techStacks: ["Tailwind CSS", "React.js"],
     liveSite: "https://todo-task-manager-application-using.vercel.app/",
-    category: "Portfolio",
+    category: "Productivity",
   },
   {
     image: RocPaperSecissor,
     description:
-      "A modern, stylized implementation of the classic Rock-Paper-Scissors game featuring rich animations, dynamic win/loss streak counters, and precise scoring mechanics against a computer dealer.",
-    techStacks: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "A modern implementation of the classic Rock-Paper-Scissors game featuring dynamic animations, interactive gameplay, score tracking, and a polished user experience.",
+    techStacks: ["HTMl", "CSS", "JavaScript"],
     liveSite: "https://abrarmahabub125.github.io/rock-paper-scissors-game/",
-    category: "Animated design",
+    category: "Game",
   },
   {
     image: appVerse,
     description:
-      "A centralized application showcase platform and micro-frontend landing page highlighting a suite of web applications, tools, and developer utilities with streamlined navigation.",
-    techStacks: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "A centralized application showcase platform highlighting multiple web applications, developer tools, and utilities with streamlined navigation and a modern user experience.",
+    techStacks: ["TypeScript", "Tailwind CSS", "React.js"],
     liveSite: "https://app-verse.vercel.app/",
     category: "Portfolio",
+  },
+  {
+    image: DrafterDesign,
+    description:
+      "A modern portfolio website concept focused on clean layouts, elegant typography, and responsive design to effectively showcase personal projects and creative work.",
+    techStacks: ["HTML", "CSS", "JavaScript"],
+    liveSite:
+      "https://abrarmahabub125.github.io/draftr-design-prototype-portfolio_website/",
+    category: "Portfolio",
+  },
+  {
+    image: HangManGame,
+    description:
+      "An interactive word guessing game where players uncover hidden words by selecting letters. Features dynamic game logic, responsive design, and an enjoyable gameplay experience.",
+    techStacks: ["HTML", "CSS", "JavaScript"],
+    liveSite: "https://abrarmahabub125.github.io/hangman-game/",
+    category: "Game",
+  },
+  {
+    image: FilpCardGame,
+    description:
+      "A memory card matching game that challenges players to find matching pairs using concentration and recall skills. Includes smooth animations and engaging game mechanics.",
+    techStacks: ["HTML", "CSS", "JavaScript"],
+    liveSite: "https://abrarmahabub125.github.io/flip-card-game/",
+    category: "Game",
+  },
+  {
+    image: TicketManagement,
+    description:
+      "A ticket management system built to streamline issue tracking and support workflows, allowing users to create, manage, update, and monitor tickets efficiently.",
+    techStacks: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
+    liveSite: "https://ticket-management-app-kappa.vercel.app/",
+    category: "Management System",
   },
 ];

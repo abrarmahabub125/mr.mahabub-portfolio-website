@@ -34,7 +34,7 @@ const PageHeroSection = ({ data }: PageHeroSectionProps): JSX.Element => {
       </div>
 
       <div className="mt-8 px-4 lg:px-0">
-        <div className="flex max-w-2xl flex-wrap justify-evenly gap-4">
+        <div className="flex max-w-2xl flex-wrap justify-center gap-4">
           {data.filters.map((item, idx) => {
             const isActive = item.toLowerCase() === filterKey.toLowerCase();
 
