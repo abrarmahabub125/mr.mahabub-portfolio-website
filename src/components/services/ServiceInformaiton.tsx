@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { Link } from "react-router";
 import Button from "../shared/Button";
 
@@ -13,7 +14,7 @@ interface ServiceInformationProps {
 const ServiceInformaiton = ({
   serviceDetails,
   liveSite,
-}: ServiceInformationProps) => {
+}: ServiceInformationProps): JSX.Element => {
   return (
     <div
       data-aos="fade-zoom-in"
@@ -31,7 +32,7 @@ const ServiceInformaiton = ({
         </div>
         <div>
           <ul className="text-primary flex flex-col gap-y-2 text-xs font-light lg:text-sm">
-            {serviceDetails?.skills.map((item, idx) => (
+            {serviceDetails?.skills.map((item: string, idx: number) => (
               <li key={idx} className="flex items-center gap-x-2">
                 <span>
                   <svg

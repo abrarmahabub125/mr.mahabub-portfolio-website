@@ -1,11 +1,13 @@
-import { type ReactNode } from "react";
+import { type JSX, type ReactNode } from "react";
 import VideoLogo from "../../assets/video/MR_MAHABUB.webm";
 
 interface AnimateLogoContainerProps {
   children: ReactNode;
 }
 
-const AnimateLogoContainer = ({ children }: AnimateLogoContainerProps) => {
+const AnimateLogoContainer = ({
+  children,
+}: AnimateLogoContainerProps): JSX.Element => {
   return (
     <div className="relative h-125 w-full overflow-hidden">
       {/* video  */}

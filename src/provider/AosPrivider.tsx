@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 
-const AOSProvider = () => {
+const AOSProvider = (): null => {
   const location = useLocation();
 
   useEffect(() => {

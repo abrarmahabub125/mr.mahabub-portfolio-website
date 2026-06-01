@@ -1,9 +1,10 @@
+import type { JSX } from "react";
 import VideoLogo from "../../assets/video/MR_MAHABUB.webm";
 import Button from "../shared/Button";
 import MouseScroll from "../shared/MouseScroll";
 import WordLoader from "./WorldLoader";
 
-const HeroSection = () => {
+const HeroSection = (): JSX.Element => {
   return (
     <div className="h-full min-h-screen">
       {/* wrapper  */}

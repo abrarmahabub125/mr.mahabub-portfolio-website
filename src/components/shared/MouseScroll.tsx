@@ -1,7 +1,8 @@
 import { useLottie } from "lottie-react";
+import type { JSX } from "react";
 import animationData from "../../assets/lottie/mouse-scroll.json";
 
-function MouseScroll() {
+function MouseScroll(): JSX.Element {
   const options = {
     animationData: animationData,
     loop: true,

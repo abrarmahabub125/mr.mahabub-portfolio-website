@@ -1,8 +1,9 @@
+import type { JSX } from "react";
 import { projects } from "../../data/data";
 import Button from "../shared/Button";
 import ProjectCard from "../shared/ProjectCard";
 
-const HighlightProjects = () => {
+const HighlightProjects = (): JSX.Element => {
   return (
     <div className="xl:px-[calc((100vw-1150px)/2)]">
       <div className="mt-8 px-4 xl:px-0">

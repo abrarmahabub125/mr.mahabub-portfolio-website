@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { Link } from "react-router";
 
 interface ServiceCardProps {
@@ -8,7 +9,7 @@ interface ServiceCardProps {
   };
 }
 
-const ServiceCard = ({ service }: ServiceCardProps) => {
+const ServiceCard = ({ service }: ServiceCardProps): JSX.Element => {
   return (
     <Link
       to={"/services"}

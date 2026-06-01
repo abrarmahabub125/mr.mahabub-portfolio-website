@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import AbourWork from "../components/home/AbourWork";
 import HeroSection from "../components/home/HeroSection";
 import HighlightProjects from "../components/home/HighlightProjects";
@@ -6,7 +7,7 @@ import MyServices from "../components/home/MyServices";
 import BringYourProjects from "../components/shared/BringYourProjects";
 import Footer from "../components/shared/Footer";
 
-const HomePage = () => {
+const HomePage = (): JSX.Element => {
   return (
     <>
       <HeroSection />

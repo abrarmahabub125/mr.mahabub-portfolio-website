@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { Toaster } from "react-hot-toast";
 import { Outlet } from "react-router";
 import MobileNavbar from "./components/MobileNavbar";
@@ -7,7 +8,7 @@ import CanvasCursor from "./components/cursor/CanvasCursor";
 import AOSProvider from "./provider/AosPrivider";
 import { FilterProvider } from "./provider/filterProvider";
 
-function App() {
+function App(): JSX.Element {
   return (
     <FilterProvider>
       <AOSProvider />

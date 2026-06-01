@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { type SubmitHandler, useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
@@ -8,7 +9,7 @@ type ContactFormInputs = {
   message: string;
 };
 
-const ContactForm = () => {
+const ContactForm = (): JSX.Element => {
   const {
     register,
     handleSubmit,

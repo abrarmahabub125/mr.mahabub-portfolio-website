@@ -1,4 +1,6 @@
-const Footer = () => {
+import type { JSX } from "react";
+
+const Footer = (): JSX.Element => {
   return (
     <div className="px-[calc((100vw-1400px)/2)]">
       <div className="flex w-full items-center justify-between px-4 py-6 lg:px-0">

@@ -1,4 +1,6 @@
-const ContactDetails = () => {
+import type { JSX } from "react";
+
+const ContactDetails = (): JSX.Element => {
   return (
     <div
       data-aos="fade-zoom-in"

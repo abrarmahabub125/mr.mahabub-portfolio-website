@@ -1,8 +1,9 @@
+import type { JSX } from "react";
 import { services } from "../../data/data";
 import Button from "../shared/Button";
 import ServiceCard from "../shared/ServiceCard";
 
-const MyServices = () => {
+const MyServices = (): JSX.Element => {
   return (
     <div className="xl:px-[calc((100vw-1150px)/2)]">
       <div className="mt-8 px-4 xl:px-0">

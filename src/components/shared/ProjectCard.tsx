@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { Link } from "react-router";
 import type { Project } from "../../data/data";
 
@@ -5,7 +6,7 @@ interface ProjectCardProps {
   project: Project;
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ project }: ProjectCardProps): JSX.Element => {
   return (
     <div
       data-aos="fade-zoom-in"

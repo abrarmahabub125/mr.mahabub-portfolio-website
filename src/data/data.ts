@@ -18,7 +18,25 @@ export interface Project {
   category: string;
 }
 
-export const projectsHeroData = {
+export interface HeroData {
+  pathLabel: string;
+  heading: string;
+  filters: string[];
+}
+
+export interface ServicesInfo {
+  title: string;
+  description: string;
+  skills: string[];
+}
+
+export interface Services {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export const projectsHeroData: HeroData = {
   pathLabel: "Projects",
   heading: "My projects",
   filters: [
@@ -30,12 +48,12 @@ export const projectsHeroData = {
     "Animated design",
   ],
 };
-export const contactsHeroData = {
+export const contactsHeroData: HeroData = {
   pathLabel: "Contacts",
   heading: "Contact",
   filters: ["01915769233", "abrarmahabub404@gmail.com"],
 };
-export const servicesHeroData = {
+export const servicesHeroData: HeroData = {
   pathLabel: "Services",
   heading: "My services",
   filters: [
@@ -45,13 +63,13 @@ export const servicesHeroData = {
   ],
 };
 
-export const aboutHeroData = {
+export const aboutHeroData: HeroData = {
   pathLabel: "About",
   heading: "About me",
   filters: ["MERN Stack Developer", "UI/UX Designer", "Frontend Design Expert"],
 };
 
-export const services = [
+export const services: Services[] = [
   {
     icon: FrontendIcon,
     title: "Frontend Development",
@@ -72,7 +90,7 @@ export const services = [
   },
 ];
 
-export const servicesInfo = [
+export const servicesInfo: ServicesInfo[] = [
   {
     title: "Frontend Development",
     description:

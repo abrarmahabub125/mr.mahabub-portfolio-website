@@ -1,8 +1,9 @@
+import type { JSX } from "react";
 import MyImage from "../../assets/images/my-photo.png";
 import WordLoader from "../home/WorldLoader";
 import Button from "../shared/Button";
 
-const AboutMe = () => {
+const AboutMe = (): JSX.Element => {
   return (
     <div className="my-12 px-4 xl:px-[calc((100vw-1150px)/2)]">
       <div className="flex flex-col items-center">
@@ -47,14 +48,14 @@ const AboutMe = () => {
           data-aos-offset="0"
           className="text-primary mt-12 text-base leading-7 font-light"
         >
-          <p className="text-primary text-sm leading-5 font-light lg:text-base lg:leading-6 lg:font-normal xl:leading-7">
+          <p className="text-secondary text-sm leading-6 font-light lg:text-base lg:leading-6 lg:font-normal xl:leading-7">
             I’m a passionate MERN stack developer with 2 years of experience
             building modern, responsive, and scalable web applications. I
             specialize in creating dynamic user interfaces with React, Next.js,
             Tailwind CSS, and TypeScript, alongside developing secure and
             efficient backend systems using Node.js, Express, and MongoDB.
           </p>
-          <p className="text-primary mt-4 text-xs leading-5 font-light md:text-sm lg:text-base lg:leading-7">
+          <p className="text-secondary mt-6 text-sm leading-6 font-light lg:text-base lg:leading-6 lg:font-normal xl:leading-7">
             I focus on writing clean, maintainable code and delivering smooth
             user experiences with optimized performance. From frontend design to
             backend architecture and database management, I enjoy turning ideas

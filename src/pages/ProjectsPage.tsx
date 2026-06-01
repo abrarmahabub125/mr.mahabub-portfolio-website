@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import HorizontalLoopText from "../components/home/HorizontalLoopText";
 import AllProjects from "../components/projects/AllProjects";
 import AnimateLogoContainer from "../components/shared/AnimateLogoContainer";
@@ -6,7 +7,7 @@ import Footer from "../components/shared/Footer";
 import PageHeroSection from "../components/shared/PageHeroSection";
 import { projectsHeroData } from "../data/data.ts";
 
-const ProjectsPage = () => {
+const ProjectsPage = (): JSX.Element => {
   return (
     <div>
       <AnimateLogoContainer>

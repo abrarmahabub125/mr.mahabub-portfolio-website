@@ -1,6 +1,7 @@
+import type { JSX } from "react";
 import Button from "../shared/Button";
 
-const AbourWork = () => {
+const AbourWork = (): JSX.Element => {
   return (
     <div className="my-28 px-[calc((100vw-1150px)/2)]">
       <div className="flex flex-col items-center px-4 lg:items-start xl:px-0">

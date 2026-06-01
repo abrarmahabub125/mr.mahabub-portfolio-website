@@ -1,7 +1,8 @@
+import type { JSX } from "react";
 import VideoLogo from "../../assets/video/MR_MAHABUB.webm";
 import Button from "./Button";
 
-const BringYourProjects = () => {
+const BringYourProjects = (): JSX.Element => {
   return (
     <div className="my-28 xl:px-[calc((100vw-1150px)/2)]">
       <div className="flex w-full flex-col items-center justify-center gap-y-4 px-4 lg:px-0">

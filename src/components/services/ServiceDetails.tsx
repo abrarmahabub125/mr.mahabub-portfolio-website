@@ -1,8 +1,9 @@
+import type { JSX } from "react";
 import { projects, servicesInfo } from "../../data/data";
 import ProjectCard from "../shared/ProjectCard";
 import ServiceInformaiton from "./ServiceInformaiton";
 
-const ServiceDetails = () => {
+const ServiceDetails = (): JSX.Element => {
   return (
     <div className="xl:px-[calc((100vw-1150px)/2)]">
       {/* wrapper  */}

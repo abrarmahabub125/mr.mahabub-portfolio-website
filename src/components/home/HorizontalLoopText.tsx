@@ -1,4 +1,6 @@
-const items = [
+import type { JSX } from "react/jsx-runtime";
+
+const items: string[] = [
   "Creative Developer",
   "React & Next.js",
   "Comples UI/UX Designer",
@@ -8,7 +10,7 @@ const items = [
   "MERN Stack Developer",
 ];
 
-const HorizontalLoopText = () => {
+const HorizontalLoopText = (): JSX.Element => {
   return (
     <div
       data-aos="fade-zoom-in"
@@ -31,7 +33,7 @@ const HorizontalLoopText = () => {
               key={i}
               className="flex shrink-0 items-center gap-15 pr-15 whitespace-nowrap"
             >
-              {items.map((item, index) => (
+              {items.map((item: string, index: number) => (
                 <div key={index} className="flex items-center">
                   <h1 className="text-primary text-sm font-medium uppercase lg:text-base">
                     {item}

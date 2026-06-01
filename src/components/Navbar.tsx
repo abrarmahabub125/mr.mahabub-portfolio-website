@@ -1,14 +1,23 @@
-import { useEffect, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router";
+import { useState, type JSX } from "react";
+import { Link, NavLink } from "react-router";
 import Brand from "../assets/images/brand.png";
 
-const Navbar = () => {
-  const location = useLocation();
-  const [animateKey, setAnimateKey] = useState(0);
+type NavItem = {
+  path: string;
+  label: string;
+};
 
-  useEffect(() => {
-    setAnimateKey((prev) => prev + 1);
-  }, [location.pathname]);
+const navItems: NavItem[] = [
+  { path: "/projects", label: "Projects" },
+  { path: "/services", label: "Services" },
+  { path: "/about-me", label: "About" },
+  { path: "/contact-me", label: "Contact" },
+];
+
+const Navbar = (): JSX.Element => {
+  const [animateKey, setAnimateKey] = useState<number>(0);
+
+  const handleReloadAOS = (): void => setAnimateKey((prev) => prev + 1);
 
   return (
     <div className="fixed top-0 left-0 z-999 w-full">
@@ -33,62 +42,23 @@ const Navbar = () => {
           <div className="rounded-full border border-gray-400 backdrop-blur-xl">
             <nav>
               <ul className="flex h-12 items-center justify-center gap-6 px-11">
-                <li className="flex-1 px-1.5">
-                  <NavLink
-                    className={({ isActive }) =>
-                      `inline-block px-2 py-2 text-sm font-semibold transition-all duration-200 ease-in-out hover:scale-110 ${
-                        isActive
-                          ? "text-brand"
-                          : "text-primary hover:text-brand"
-                      }`
-                    }
-                    to="/projects"
-                  >
-                    Projects
-                  </NavLink>
-                </li>
-                <li className="flex-1 px-1.5">
-                  <NavLink
-                    className={({ isActive }) =>
-                      `inline-block px-2 py-2 text-sm font-semibold transition-all duration-200 ease-in-out hover:scale-110 ${
-                        isActive
-                          ? "text-brand"
-                          : "text-primary hover:text-brand"
-                      }`
-                    }
-                    to="/services"
-                  >
-                    Services
-                  </NavLink>
-                </li>
-                <li className="flex-1 px-1.5">
-                  <NavLink
-                    className={({ isActive }) =>
-                      `inline-block px-2 py-2 text-sm font-semibold transition-all duration-200 ease-in-out hover:scale-110 ${
-                        isActive
-                          ? "text-brand"
-                          : "text-primary hover:text-brand"
-                      }`
-                    }
-                    to="/about-me"
-                  >
-                    About
-                  </NavLink>
-                </li>
-                <li className="flex-1 px-1.5">
-                  <NavLink
-                    className={({ isActive }) =>
-                      `inline-block px-2 py-2 text-sm font-semibold transition-all duration-200 ease-in-out hover:scale-110 ${
-                        isActive
-                          ? "text-brand"
-                          : "text-primary hover:text-brand"
-                      }`
-                    }
-                    to="/contact-me"
-                  >
-                    Contact
-                  </NavLink>
-                </li>
+                {navItems.map((item, idx) => (
+                  <li key={idx} className="flex-1 px-1.5">
+                    <NavLink
+                      onClick={handleReloadAOS}
+                      className={({ isActive }: { isActive: boolean }) =>
+                        `inline-block px-2 py-2 text-sm font-semibold transition-all duration-200 ease-in-out hover:scale-110 ${
+                          isActive
+                            ? "text-brand"
+                            : "text-primary hover:text-brand"
+                        }`
+                      }
+                      to={item.path}
+                    >
+                      {item.label}
+                    </NavLink>
+                  </li>
+                ))}
               </ul>
             </nav>
           </div>

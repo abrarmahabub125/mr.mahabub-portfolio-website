@@ -1,9 +1,10 @@
+import type { JSX } from "react";
 import { projects } from "../../data/data";
 import { useFilter } from "../../hooks/useFilterContext";
 import Button from "../shared/Button";
 import ProjectCard from "../shared/ProjectCard";
 
-const AllProjects = () => {
+const AllProjects = (): JSX.Element => {
   const { filterKey } = useFilter();
   const filteredProject =
     filterKey === "All"

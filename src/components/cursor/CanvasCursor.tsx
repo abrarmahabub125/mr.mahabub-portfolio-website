@@ -1,6 +1,7 @@
+import type { JSX } from "react";
 import useCanvasCursor from "../../hooks/useCanvasCursor";
 
-const CanvasCursor = () => {
+const CanvasCursor = (): JSX.Element => {
   useCanvasCursor();
   return (
     <canvas

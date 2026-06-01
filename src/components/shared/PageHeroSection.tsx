@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { Link } from "react-router";
 import { useFilter } from "../../hooks/useFilterContext";
 
@@ -9,7 +10,7 @@ interface PageHeroSectionProps {
   };
 }
 
-const PageHeroSection = ({ data }: PageHeroSectionProps) => {
+const PageHeroSection = ({ data }: PageHeroSectionProps): JSX.Element => {
   const { filterKey, setFilterKey } = useFilter();
 
   return (

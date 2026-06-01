@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { Link } from "react-router";
 
 type Btn = {
@@ -5,7 +6,7 @@ type Btn = {
   path: string;
 };
 
-const Button = ({ label, path }: Btn) => {
+const Button = ({ label, path }: Btn): JSX.Element => {
   return (
     <div
       data-aos="fade-zoom-in"
