@@ -63,7 +63,10 @@ const AboutMe = (): JSX.Element => {
           </p>
         </div>
         <div className="mt-12">
-          <Button label="Download my CV" path="/download-cv" />
+          <Button
+            label="Download my CV"
+            path="https://docs.google.com/document/d/1vzN_I_OnFUvF2P9pk9u8UAHl_TxSSrVPCLvaPaLi_Q4/edit?tab=t.0"
+          />
         </div>
       </div>
     </div>

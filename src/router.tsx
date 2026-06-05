@@ -10,6 +10,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     Component: App,
+    errorElement: (
+      <div className="flex h-screen w-full items-center justify-center text-center text-6xl font-semibold">
+        Page Not Found
+      </div>
+    ),
     children: [
       {
         index: true,
