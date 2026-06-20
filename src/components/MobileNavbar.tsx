@@ -125,7 +125,7 @@ const MobileNavbar = (): JSX.Element => {
               <div className="mt-8">
                 <Link
                   onClick={handleCloseMenu}
-                  className="bg-brand-secondary hover:base-brandmefont-mediumext-primary-black inline-block w-fit rounded-full px-5 py-2.5 text-sm text-white shadow-[0_0_15px_rgba(34,211,238,0.5)] backdrop-blur-xl transition-all duration-300 ease-in-out hover:scale-105"
+                  className="bg-brand-secondary hover:bg-brand text-primary inline-block w-fit rounded-full px-5 py-2.5 text-sm font-medium shadow-[0_0_15px_rgba(34,211,238,0.5)] backdrop-blur-xl transition-all duration-300 ease-in-out hover:scale-105"
                   to="/contact-me"
                 >
                   Start a project

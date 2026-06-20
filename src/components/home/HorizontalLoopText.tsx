@@ -3,7 +3,7 @@ import type { JSX } from "react/jsx-runtime";
 const items: string[] = [
   "Creative Developer",
   "React & Next.js",
-  "Comples UI/UX Designer",
+  "UI/UX Designer",
   "Full Stack Engineer",
   "Problem Solver",
   "UI/UX Lover",

@@ -11,7 +11,7 @@ interface ServiceInformationProps {
   liveSite: string;
 }
 
-const ServiceInformaiton = ({
+const ServiceInformation = ({
   serviceDetails,
   liveSite,
 }: ServiceInformationProps): JSX.Element => {
@@ -75,4 +75,4 @@ const ServiceInformaiton = ({
   );
 };
 
-export default ServiceInformaiton;
+export default ServiceInformation;

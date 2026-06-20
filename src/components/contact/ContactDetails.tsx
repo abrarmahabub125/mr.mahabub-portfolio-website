@@ -17,16 +17,16 @@ const ContactDetails = (): JSX.Element => {
         </p>
         <p className="text-primary mt-4 text-sm leading-6 font-light">
           We can initially communicate through email and later continue on
-          WhatsApp for smoother discussion and project updates. I’m available to
+          WhatsApp for smoother discussion and project updates. I'm available to
           discuss your ideas, requirements, and development solutions at any
           time.
         </p>
       </div>
       <div className="mt-8">
-        <p className="text-secondary mt-4 text-sm leading-6 font-extralight">
+        <p className="text-secondary mt-4 text-sm leading-6 font-light">
           Processing of personal data
         </p>
-        <p className="text-secondary mt-4 text-sm leading-6 font-extralight">
+        <p className="text-secondary mt-4 text-sm leading-6 font-light">
           In accordance with applicable data protection regulations, any
           personal information shared through this website or communication
           channels will remain secure and confidential. You may request access,

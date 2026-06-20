@@ -49,7 +49,7 @@ const AboutMe = (): JSX.Element => {
           className="text-primary mt-12 text-base leading-7 font-light"
         >
           <p className="text-secondary text-sm leading-6 font-light lg:text-base lg:leading-6 lg:font-normal xl:leading-7">
-            I’m a passionate MERN stack developer with 2 years of experience
+            I'm a passionate MERN stack developer with 2 years of experience
             building modern, responsive, and scalable web applications. I
             specialize in creating dynamic user interfaces with React, Next.js,
             Tailwind CSS, and TypeScript, alongside developing secure and

@@ -5,17 +5,17 @@ import appVerse from "../assets/images/app-verse.png";
 import BookLibrary from "../assets/images/book-library.png";
 import DrafterDesign from "../assets/images/drafter-design.png";
 import Estatein from "../assets/images/estatein.png";
-import FilpCardGame from "../assets/images/filp-card-game.png";
+import FlipCardGame from "../assets/images/flip-card-game.png";
 import HangManGame from "../assets/images/hang-man-game.png";
 import MotionPixel from "../assets/images/motion-pixel.png";
-import RocPaperSecissor from "../assets/images/rock-paper-scissor.png";
+import RocPaperScissor from "../assets/images/rock-paper-scissor.png";
 import TaskManager from "../assets/images/task-manager.png";
 import TicTacToe from "../assets/images/tic-tac-teo.png";
 import TicketManagement from "../assets/images/ticket-management-app.png";
 import xSocial from "../assets/images/x-social.png";
 
 export interface Project {
-  image: string; // Tomar import kora image type onusare use korbe (e.g., StaticImageData)
+  image: string;
   description: string;
   techStacks: string[];
   liveSite: string;
@@ -71,7 +71,11 @@ export const servicesHeroData: HeroData = {
 export const aboutHeroData: HeroData = {
   pathLabel: "About",
   heading: "About me",
-  filters: ["MERN Stack Developer", "UI/UX Designer", "Frontend Design Expert"],
+  filters: [
+    "MERN Stack Developer",
+    "UI/UX Designer",
+    "Frontend Development Expert",
+  ],
 };
 
 export const services: Services[] = [
@@ -114,6 +118,7 @@ export const servicesInfo: ServicesInfo[] = [
     skills: [
       "REST API Development",
       "Authentication & Authorization",
+      "OAuth Integration",
       "Node.js & Express.js",
       "Server Optimization & Security",
     ],
@@ -144,6 +149,7 @@ export const projects: Project[] = [
       "Express.js",
       "MongoDB",
       "JWT",
+      "Google OAuth",
     ],
     liveSite: "https://x-social-clone.vercel.app/",
     category: "Social Media",
@@ -167,7 +173,7 @@ export const projects: Project[] = [
     image: MotionPixel,
     description:
       "An interactive and highly animated portfolio website showcasing creative web experiences with smooth transitions, engaging micro-interactions, and responsive design principles.",
-    techStacks: ["React", "Tailwind CSS"],
+    techStacks: ["React", "Tailwind CSS", "JavaScript", "CSS"],
     liveSite: "https://motion-pixel.vercel.app/",
     category: "Portfolio",
   },
@@ -175,7 +181,7 @@ export const projects: Project[] = [
     image: Estatein,
     description:
       "A modern real estate platform designed to showcase property listings, featured properties, and real estate services through an elegant and user-friendly interface.",
-    techStacks: ["React", "Tailwind CSS"],
+    techStacks: ["React", "Tailwind CSS", "JavaScript", "CSS"],
     liveSite: "https://estatein-website-lyart.vercel.app/",
     category: "Real Estate",
   },
@@ -191,12 +197,12 @@ export const projects: Project[] = [
     image: TaskManager,
     description:
       "A productivity-focused task management application that helps users organize work efficiently with task tracking, status management, and intuitive workflow organization.",
-    techStacks: ["Tailwind CSS", "React.js"],
+    techStacks: ["Tailwind CSS", "React.js", "CSS"],
     liveSite: "https://todo-task-manager-application-using.vercel.app/",
     category: "Productivity",
   },
   {
-    image: RocPaperSecissor,
+    image: RocPaperScissor,
     description:
       "A modern implementation of the classic Rock-Paper-Scissors game featuring dynamic animations, interactive gameplay, score tracking, and a polished user experience.",
     techStacks: ["HTMl", "CSS", "JavaScript"],
@@ -229,7 +235,7 @@ export const projects: Project[] = [
     category: "Game",
   },
   {
-    image: FilpCardGame,
+    image: FlipCardGame,
     description:
       "A memory card matching game that challenges players to find matching pairs using concentration and recall skills. Includes smooth animations and engaging game mechanics.",
     techStacks: ["HTML", "CSS", "JavaScript"],
@@ -240,7 +246,7 @@ export const projects: Project[] = [
     image: TicketManagement,
     description:
       "A ticket management system built to streamline issue tracking and support workflows, allowing users to create, manage, update, and monitor tickets efficiently.",
-    techStacks: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
+    techStacks: ["React", "CSS", "Tailwind CSS"],
     liveSite: "https://ticket-management-app-kappa.vercel.app/",
     category: "Management System",
   },

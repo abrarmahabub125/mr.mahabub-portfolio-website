@@ -5,7 +5,7 @@ import MobileNavbar from "./components/MobileNavbar";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import CanvasCursor from "./components/cursor/CanvasCursor";
-import AOSProvider from "./provider/AosPrivider";
+import AOSProvider from "./provider/AosProvider";
 import { FilterProvider } from "./provider/filterProvider";
 
 function App(): JSX.Element {
