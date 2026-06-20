@@ -56,7 +56,7 @@ export const projectsHeroData: HeroData = {
 export const contactsHeroData: HeroData = {
   pathLabel: "Contacts",
   heading: "Contact",
-  filters: ["01915769233", "abrarmahabub404@gmail.com"],
+  filters: ["+8801915769233", "abrarmahabub125@gmail.com"],
 };
 export const servicesHeroData: HeroData = {
   pathLabel: "Services",
@@ -142,7 +142,7 @@ export const projects: Project[] = [
     description:
       "A full-featured social media platform built with the MERN stack, featuring secure JWT authentication, post creation and interactions, user profiles, and real-time social engagement capabilities.",
     techStacks: [
-      "React",
+      "React.js",
       "TypeScript",
       "Tailwind CSS",
       "Node.js",
@@ -159,7 +159,7 @@ export const projects: Project[] = [
     description:
       "A digital library management system that allows users to browse, manage, and organize books efficiently. Designed with a clean interface and optimized workflows for seamless book tracking and management.",
     techStacks: [
-      "React",
+      "React.js",
       "Vite",
       "Tailwind CSS",
       "Node.js",
@@ -173,7 +173,7 @@ export const projects: Project[] = [
     image: MotionPixel,
     description:
       "An interactive and highly animated portfolio website showcasing creative web experiences with smooth transitions, engaging micro-interactions, and responsive design principles.",
-    techStacks: ["React", "Tailwind CSS", "JavaScript", "CSS"],
+    techStacks: ["React.js", "Tailwind CSS", "JavaScript", "CSS"],
     liveSite: "https://motion-pixel.vercel.app/",
     category: "Portfolio",
   },
@@ -181,7 +181,7 @@ export const projects: Project[] = [
     image: Estatein,
     description:
       "A modern real estate platform designed to showcase property listings, featured properties, and real estate services through an elegant and user-friendly interface.",
-    techStacks: ["React", "Tailwind CSS", "JavaScript", "CSS"],
+    techStacks: ["React.js", "Tailwind CSS", "JavaScript", "CSS"],
     liveSite: "https://estatein-website-lyart.vercel.app/",
     category: "Real Estate",
   },
@@ -205,7 +205,7 @@ export const projects: Project[] = [
     image: RocPaperScissor,
     description:
       "A modern implementation of the classic Rock-Paper-Scissors game featuring dynamic animations, interactive gameplay, score tracking, and a polished user experience.",
-    techStacks: ["HTMl", "CSS", "JavaScript"],
+    techStacks: ["HTML", "CSS", "JavaScript"],
     liveSite: "https://abrarmahabub125.github.io/rock-paper-scissors-game/",
     category: "Game",
   },
@@ -246,7 +246,7 @@ export const projects: Project[] = [
     image: TicketManagement,
     description:
       "A ticket management system built to streamline issue tracking and support workflows, allowing users to create, manage, update, and monitor tickets efficiently.",
-    techStacks: ["React", "CSS", "Tailwind CSS"],
+    techStacks: ["React.js", "CSS", "Tailwind CSS"],
     liveSite: "https://ticket-management-app-kappa.vercel.app/",
     category: "Management System",
   },

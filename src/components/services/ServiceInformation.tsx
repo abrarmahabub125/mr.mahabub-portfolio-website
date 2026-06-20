@@ -26,7 +26,7 @@ const ServiceInformation = ({
           <h1 className="from-brand to-primary bg-linear-120 bg-clip-text text-xl font-medium text-transparent lg:text-2xl lg:font-semibold">
             {serviceDetails?.title}
           </h1>
-          <p className="text-primary mt-4 text-xs font-light lg:text-sm">
+          <p className="text-primary mt-4 text-xs font-light lg:text-sm/6">
             {serviceDetails?.description}
           </p>
         </div>

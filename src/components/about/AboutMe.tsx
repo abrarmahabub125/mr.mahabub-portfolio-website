@@ -1,9 +1,20 @@
 import type { JSX } from "react";
 import MyImage from "../../assets/images/my-photo.png";
+import ResumePDF from "../../assets/pdf/mahabub-resume.pdf";
 import WordLoader from "../home/WorldLoader";
 import Button from "../shared/Button";
 
 const AboutMe = (): JSX.Element => {
+  const handleDownload = (): void => {
+    const link = document.createElement("a");
+    link.href = ResumePDF;
+    link.setAttribute("download", "Mahabub Alam Resume.pdf");
+    document.body.appendChild(link);
+    link.click();
+
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="my-12 px-4 xl:px-[calc((100vw-1150px)/2)]">
       <div className="flex flex-col items-center">
@@ -63,10 +74,9 @@ const AboutMe = (): JSX.Element => {
           </p>
         </div>
         <div className="mt-12">
-          <Button
-            label="Download my CV"
-            path="https://docs.google.com/document/d/1vzN_I_OnFUvF2P9pk9u8UAHl_TxSSrVPCLvaPaLi_Q4/edit?tab=t.0"
-          />
+          <span onClick={handleDownload}>
+            <Button label="Download my CV" path="#" />
+          </span>
         </div>
       </div>
     </div>
